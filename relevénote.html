@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Menu</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="notesStyle.css">
+</head>
+<body>
+
+    <div class="header">
+        <form action="relevenote.php" method="POST">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Sujets</a></li>
+                <li><a href="#">Résultat</a></li>
+                <li><a href="#">Autre</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="Connexion_ccf.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </div>
+    <table class="tableau">
+        <thead>
+            <tr>
+            <th>Nom & Prénom</th>
+            <th>BTS</th>
+            <th>Epreuve</th>
+            <th>Durée</th>
+            <th>Date</th>
+            <th>Note</th>
+            <th>Coefficient</th>
+            <th>Commentaire</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <select id="default" name="eleves">
+                        <option value="">Liste des élèves</option>
+                    <option value="ABIRAM">ABIRAM Raveendran</option>
+                    <option value="ANGLOMA">ANGLOMA Wesley</option>
+                    <option value="ANZALA">ANZALA Emeric</option>
+                    <option value="ASTASIE">ASTASIE Mounia</option>
+                    <option value="BAZES">BAZES Kévin</option>
+                    <option value="CISSE">CISSE Adam Bacongo</option>
+                    <option value="DAVID">DAVID Tom</option>
+                    <option value="DOS SANTOS">DOS SANTOS David</option>
+                    <option value="DRAMA">DRAMA Mouhamadou</option>
+                    <option value="EL BANA">EL BANA Ashraf</option>
+                    <option value="EL HAFSI">EL HAFSI Nizar</option>
+                    <option value="GOUBIN">GOUBIN Sylvain</option>
+                    <option value="GUERIN">GUERIN Nicolas</option>
+                    <option value="HASNAOUI">HASNAOUI Nassim</option>
+                    <option value="HIAUMET">HIAUMET Mattéo</option>
+                    <option value="INDRALINGAM">INDRALINGAM Inthusan</option>
+                    <option value="LA SALA">LA SALA Milan</option>
+                    <option value="MANE">MANE Malang</option>
+                    <option value="MARTINS">MARTINS Guillaume</option>
+                    <option value="MATHIEU">MATHIEU Emma</option>
+                    <option value="MENDES">MENDES Joaquim</option>
+                    <option value="MESINA">MESINA Cristian</option>
+                    <option value="NADJI">NADJI Rayan</option>
+                    <option value="NAZIR">NAZIR Toycan</option>
+                    <option value="RIHANE">RIHANE Inès</option>
+                    <option value="SARMIENTO">SARMIENTO Nijel</option>
+                    <option value="SAVOIE">SAVOIE Adrien</option>
+                    <option value="YAGOUBI">YAGOUBI Nabil</option>
+                    <option value="YANGUI">YANGUI Amani</option>
+                    <option value="YE">YE Stéphane</option>
+                    <option value="ZHANG">ZHANG Christophe</option>
+                
+                </td>
+
+                <td>
+                    <select id="default" name="bts">
+                    <option value="">Liste des BTS</option>
+                    <option value="sioSISR">Services informatiques aux organisations - SISR</option>
+                    <option value="sioSLAM">Services informatiques aux organisations - SLAM</option>
+                    <option value="CI">Commerce international</option>
+                    <option value="COM">Communication</option>
+                    <option value="CG">Comptabilité et Gestion</option>
+                    <option value="NDRC">Négociation Digitalisation de la relation client</option>
+                    <option value="PI">Professions immobilières</option>
+                    <option value="SAM">Support à l'action managériale</option>
+                    <option value="TOU">Tourisme</option>
+
+                </td>
+
+                <td>
+                    <select id="default" name="bts">
+                        <option value="">Liste des Epreuves</option>
+                        <option value="E4">Support et mise à disposition de services informatiques</option>
+                        <option value="E5SISR">Administration des systèmes et des réseaux</option>
+                        <option value="E5SLAM">Conception et développement d'applications</option>
+                </td>
+                <td>
+                    <input type="time" name="Durée" value="" />
+                </td>
+                <td>
+                    <input type="date" name="Date" value="" />
+                </td>
+                <td>
+                    <input type="number" name="note" min="0" max="20" value="" />
+                </td>
+                <td>
+                    <input type="number" name="coefficient" value="" />
+                </td>
+                <td><input type="text" name="commentaire" value="" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input class="bouton" type="submit" value="Confirmer" name="soumettre" >
+</form>
+</p>
+</body>
+</html>
